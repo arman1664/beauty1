@@ -1,0 +1,548 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>arman hussain</title>
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+            }
+            header{
+                background-color: whitesmoke;
+                background-image: url(images/spa.png);
+                background-position-x: right;
+                background-repeat: no-repeat;
+                background-size: 42vw;
+            }
+
+            nav{
+                /* border: 2px red solid; */
+                display: flex;
+                align-items: baseline;
+            }
+
+            .logo{
+                /* border: 3px green solid  ; */
+                margin-top: 1vw;
+                margin-left: 15vw;
+                margin-right: 4vw;
+            }
+
+            .logo img{
+                width: 6vw;
+            }
+
+
+            .menu a{
+                text-decoration: none;
+                font-size: 1vw;
+                margin: 1vw;
+                padding: .4vw;
+                color: black;
+                padding-bottom: 0vw;
+            }
+
+            .menu a:hover{
+                background-color: black;
+                color: whitesmoke;
+                border-radius: 10px;
+            }
+
+            .side-img{
+                background-image: url(images/leaf.png);
+                background-repeat: no-repeat;
+                background-position-x: left;
+                background-size: 15vw;
+
+                margin-top: 3vw;
+                display: flex;
+            }
+
+            .text-containeer{
+                margin-left: 15vw;
+                margin-bottom: 5vw;
+            }
+
+            #red-heading{
+                color: brown;
+                font-size: 1vw;
+                margin-top: 5vw;
+            }
+
+            #main-heading{
+                color: black;
+                margin-top: 1vw;
+                margin-bottom: 3vw;
+                font-size: 5.3vw;
+            }
+
+
+            #sub-heading{
+                margin-top: 1vw;
+                color: rgb(66, 66, 67);
+                font-size: 1.1vw;
+            }
+
+            #reserve-btn{
+                margin-top: 4vw;
+                background-color: rgb(249, 112, 112);
+                border: 1px wheat solid;
+                color: whitesmoke;
+                padding: 1vw;
+                font-size: 1.5vw;
+                /* font-size: medium; */
+            }
+
+            #reserve-btn:hover{
+                color: black;
+                cursor: pointer;
+            }
+
+            .lili-fool{
+                text-align: center;
+                overflow: hidden;
+                width: 90vw;
+                display: flex;
+            }
+
+            #lily{
+                float: left;
+                width: 10vw;
+            }
+
+            .butter{
+                margin: auto;
+                margin-top: 5vw;
+            }
+
+            .butter img{
+                width: 5vw;
+            }
+
+            #about-span{
+                text-align: center;
+                margin-top: 2vw;
+                font-size: 1.5vw;
+            }
+
+            #come{
+                text-align: center;
+                margin-top: 2vw;
+                font-size: 4.5vw;
+            }
+
+            .about-text{
+                display: flex;
+                /* text-align: center;/ */
+                margin: auto;
+                width: 80vw;
+            }
+
+            #about-para{
+                font-size: 1vw;
+                margin-top: 5vw;
+                margin-left: 1vw;
+                margin-right: 1vw;
+            }
+
+            #jasmine{
+                width: 8vw;
+                height: 6vw;
+                margin-top: -1vw;
+            }
+
+            .read-more{
+                margin: auto;
+                width: 50%;
+                text-align: center;
+            }
+
+            #read-more-button{
+                background-color: rgb(249, 112, 112);
+                font-size: 1.2vw;
+                border-radius: 50px;
+                border: 1px white dotted;
+                color: whitesmoke;
+                margin: 2vw;
+                padding: 1vw 2vw;
+            }
+
+            #read-more-button:hover{
+                color: black;
+                cursor: pointer;
+            }
+
+            .gallery{
+                display: flex;
+                width: 80vw;
+                margin: auto;
+            }
+            
+            #gallery-pic{
+                width: 19.5vw;
+                margin: 1.5vw .2vw;
+            }
+
+            #gallery-pic:hover{
+                opacity: .4;            
+            }
+
+            #popular{
+                font-size: 4vw;
+                letter-spacing: .1vw;
+                text-align: center;
+            }
+
+            #popular-para{
+                text-align: center;
+                font-size: 1vw;
+                margin: auto;
+                color: rgb(126, 128, 130);
+                padding: 2vw;
+                width: 50%;
+            }
+
+            .popular-gallery{
+                width: 75%;
+                display: flex;
+                margin: auto;
+            }
+
+            .popular-pic{
+                border: 2PX rgb(173, 170, 170) solid;
+                margin: .3vw;
+            }
+            .popular-pic img{
+                width: 20vw;
+                margin: 2VW;
+            }
+            
+
+            #popular-heading{
+                text-align: center;
+                font-size: 2vw;
+            }
+
+            #popular-para{
+                font-size: 1vw;
+            }
+
+            .popular-btn{
+                text-align: center;
+            }
+                
+
+            #popular-btn1{
+                padding: .5vw 2vw;
+                font-size: 1.2vw;
+                border-radius: 50px;
+                background-color: rgb(50, 48, 48);
+                color: whitesmoke;
+                border: 1px white solid;
+                margin: 1vw;
+            }
+
+            #popular-btn1:hover{
+                background-color: brown;
+            }
+
+
+            .owner img:hover{
+                width: 80%;
+            }
+            .qoute-pic{
+                text-align: center;
+                margin-top: 5vw;
+                margin-bottom: 2vw;
+            }
+
+            #qoute-para{
+                text-align: start;
+                font-size: 1.3vw;
+                margin: auto;
+                width: 70%;
+                padding: 2vw;
+            }
+
+            .qoute-logo{
+                text-align: center;
+            }
+
+            .qoute-logo img{
+                border-radius: 400px;
+                width: 10vw;
+                border: red 1px solid;
+                transition: width 1.5s;
+            }
+
+            .qoute-logo img:hover{
+                width: 18vw;
+            }
+
+            #name{
+                text-align: center;
+                font-size: 2vw;
+                margin: 2vw;
+            }
+
+            #exprience{
+                text-align: center;
+                margin-top: 5vw;
+                font-size: 4vw;
+            }
+
+            .team-gallery{
+                width: 95%;
+                display: flex;
+                margin: auto;
+            }
+
+            .team-pic{
+                border-radius: 200px;
+                margin: 4vw;
+                box-shadow: 40px 50px 50px rgba(128, 128, 128, 0.721);
+            }
+            .team-pic img{
+                border-radius: 200px;
+                width: 22vw;
+                cursor: pointer;
+            }
+
+            .footer-1{
+                display: flex;
+                /* padding: 2vw;     */
+                /* margin: auto;/ */
+                margin-top: 3vw;
+                width: 100%;
+            }
+
+            .foot-img img{
+                width: 40vw;
+            }
+
+            .form{
+                width: 60vw;
+                overflow: auto;
+                display: grid;
+            }
+
+            #details{
+                width: 50%;
+                height: 10%;
+                margin-top: 2vw;
+                margin-left: 3vw;
+                border: 1px white solid;
+                border-bottom: 1px rgb(225, 16, 16) solid;
+                padding: .8vw;
+                font-size: 1.1vw;
+                text-transform: capitalize;
+                text-align: center;
+            }
+
+            .footer-2{
+                text-align: center;
+                margin-top: 2vw;
+                margin-bottom: 2vw;
+            }
+
+
+            .footer-menu{
+                margin: 2vw;
+            }
+            .footer-menu a{
+                text-decoration: none;
+                color: black;
+                margin: .5vw;
+                padding: .5vw 1vw;
+                font-size: 1vw;
+            }
+
+            .footer-menu a:hover{
+                background-color: black;
+                color: whitesmoke;
+                border-radius: 10px;
+            }
+           
+
+
+        </style>
+    </head>
+    <body>
+
+        <header>
+            
+            <nav>
+                <div class="logo">
+                    <img src="images/logo.png" alt="">
+                </div>
+
+
+                <div class="menu">
+                    <a href="">HOME</a>
+                    <a href="">ABOUT</a>
+                    <a href="">FEATURES</a>
+                    <a href="">SERVICES</a>
+                    <a href="">CONTACT</a>
+                </div>
+            </nav>
+
+            <div class="side-img">
+                <!-- <img src="images/leaf.png" alt=""> -->
+                <div class="text-containeer">
+
+                    <div class="header-text">
+                        <p id="red-heading">SPA & BEAUTY CENTER</p>
+                        <P id="main-heading">
+                            Beauty and success <br> Ssarts Here.
+                        </P>
+
+                        <p id="sub-heading">
+                            Lorem ipsum dolor sit amet consectetur  <br>
+                            adipisicing elit. Fuga nemo illum commodi nulla fugiat dignissimos..................
+                        </p>
+
+                        <input type="button" value="RESERVE NOW" id="reserve-btn">
+                    </div>
+                </div>
+
+            </div>
+        </header>
+
+        <div class="lili-fool">
+            <img id="lily" src="images/china-rose.png" alt="">
+            <div class="butter">
+            <img id="butterfly" src="images/butterfly.png" alt="">
+            </div>
+        </div>
+
+        <p id="about-span">ABOUT OUR SPAN CENTER</p>
+
+        <p id="come">Come & you will be surprised!</p>
+
+        <div class="about-text">
+            <p id="about-para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo et veniam voluptate eligendi ab? Voluptate officiis totam br officia nam mollitia. Quisquam esse labore corrupti molestias voluptatibus nesciunt exercitationem, illum enim debitis distinctio in neque optio, magni voluptate voluptas impedit inventore eum ea amet asperiores est laudantium! Veniam ab vel doloribus!
+            </p>
+
+            <img id="jasmine" src="images/jasmine.png" alt="">
+        </div>
+
+        <div class="read-more">
+            <input type="button" id="read-more-button"  value="Read more">
+        </div>
+
+        <div class="gallery">
+            <img id="gallery-pic" src="images/service/1.jpg" alt="">
+            <img id="gallery-pic" src="images/service/2.jpg" alt="">
+            <img id="gallery-pic" src="images/service/3.jpg" alt="">
+            <img id="gallery-pic" src="images/service/4.jpg" alt="">
+        </div>
+
+        <p id="popular">
+            Popular Procedures
+        </p>
+
+        <p id="popular-para">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ratione tempora at culpa minus, numquam iusto pariatur, <br> assumenda adipisci qui, quis reiciendis cum laborum? Beatae placeat incidunt ipsum sequi mollitia totam eos iste enim amet ea sint quis, corporis dicta?
+        </p>
+
+        <div class="popular-gallery">
+            <div class="popular-pic">
+                <img src="images/post/1.jpg" alt="">
+                <p id="popular-heading">THEREPY</p>
+                <p id="popular-para">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat, debitis!
+                </p>
+                <div class="popular-btn">
+                                <input type="button" id="popular-btn1"  value="read more">
+                </div>
+            </div>
+            <div class="popular-pic">
+                <img src="images/post/2.jpg" alt="">
+                <p id="popular-heading">THEREPY</p>
+                <p id="popular-para">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat, debitis!
+                </p>
+                <div class="popular-btn">
+                                <input type="button" id="popular-btn1"  value="Read more">
+                </div>
+            </div>
+            <div class="popular-pic">
+                <img src="images/post/3.jpg" alt="">
+                <p id="popular-heading">THEREPY</p>
+                <p id="popular-para">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat, debitis!
+                </p>
+                <div class="popular-btn">
+                                <input type="button" id="popular-btn1"  value="Read more">
+                </div>
+            </div>
+        </div>
+        <div class="qoute-pic">
+            <img id="qoute" src="images/quote.png" alt="">
+        </div>
+
+        <p id="qoute-para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. In praesentium magnam eaque labore, eos numquam enim magni tenetur aut. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et aperiam dignissimos deserunt libero deleniti. Accusamus error iusto suscipit asperiores accusantium? Quisquam.</p>
+
+        
+            <div class="qoute-logo">
+                <img src="images/client-1.png" alt="">
+            </div>
+            <p id="name">KATRINA KAIF</p>
+
+            <p id="exprience">
+                Exprienced Team
+            </p>
+            
+        <p id="popular-para">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ratione tempora at culpa minus, numquam iusto pariatur, <br> assumenda adipisci qui, quis reiciendis cum laborum? Beatae placeat incidunt ipsum sequi mollitia totam eos iste enim amet ea sint quis, corporis dicta?
+        </p>
+
+        <div class="team-gallery">
+            <div class="team-pic">
+                <img src="images/team/2.jpg" alt="">
+            </div>
+
+            <div class="team-pic">
+                <img src="images/team/1.jpg" alt="">
+            </div>
+
+            <div class="team-pic">
+                <img src="images/team/3.jpg" alt="">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-1">
+            <div class="foot-img">
+                <img src="images/appointment-img.jpg" alt="">
+            </div>
+            
+                <div class="form">
+                        <input type="text" name="" id="details" placeholder="enter your name">
+                        <input type="text" name="" id="details" placeholder="enter your email address">
+                        <input type="text" name="" id="details" placeholder="enter service">
+                        <input type="text" name="" id="details" placeholder="enter your phone no.">
+                    
+                </div>
+        </div>
+
+
+        <div class="footer-2">
+            <div class="footer-logo">
+                <img src="images/logo.png" alt="">
+            </div>
+            <div class="footer-menu">
+                <a href="">HOME</a>
+                <a href="">ABOUT</a>
+                <a href="">FEATURES</a>
+                <a href="">SERVICES</a>
+                <a href="">CONTACT</a>
+            </div>
+        </div>
+    </body>
+    </html>
